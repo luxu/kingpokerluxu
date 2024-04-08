@@ -1,10 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-echo "Building project packages..."
-#python3 -m pip3 install --upgrade pip
-
-echo "Building project packages..."
+echo "BUILD START"
+pip install --upgrade pip
 pip install -r requirements.txt
-
-#echo "Migrating Database..."
-#python3 manage.py migrate --noinput
+#python3.9 manage.py migrate
+echo "BUILD END"
